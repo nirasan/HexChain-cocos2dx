@@ -204,6 +204,9 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		421F976A17EFDF820025ADFB /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F976817EFDF820025ADFB /* GameScene.cpp */; };
+		421F976D17EFF3110025ADFB /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F976B17EFF3110025ADFB /* Game.cpp */; };
+		421F977017EFF3340025ADFB /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F976E17EFF3340025ADFB /* Field.cpp */; };
+		421F977317EFF3620025ADFB /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F977117EFF3620025ADFB /* Block.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -641,6 +644,13 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		421F976817EFDF820025ADFB /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/GameScene.cpp; sourceTree = "<group>"; };
 		421F976917EFDF820025ADFB /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/GameScene.h; sourceTree = "<group>"; };
+		421F976B17EFF3110025ADFB /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = ../Classes/Game.cpp; sourceTree = "<group>"; };
+		421F976C17EFF3110025ADFB /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Classes/Game.h; sourceTree = "<group>"; };
+		421F976E17EFF3340025ADFB /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Field.cpp; path = ../Classes/Field.cpp; sourceTree = "<group>"; };
+		421F976F17EFF3340025ADFB /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Field.h; path = ../Classes/Field.h; sourceTree = "<group>"; };
+		421F977117EFF3620025ADFB /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Block.cpp; path = ../Classes/Block.cpp; sourceTree = "<group>"; };
+		421F977217EFF3620025ADFB /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = ../Classes/Block.h; sourceTree = "<group>"; };
+		421F977417EFF3D60025ADFB /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Classes/Config.h; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1179,6 +1189,13 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				421F976817EFDF820025ADFB /* GameScene.cpp */,
 				421F976917EFDF820025ADFB /* GameScene.h */,
+				421F976B17EFF3110025ADFB /* Game.cpp */,
+				421F976C17EFF3110025ADFB /* Game.h */,
+				421F976E17EFF3340025ADFB /* Field.cpp */,
+				421F976F17EFF3340025ADFB /* Field.h */,
+				421F977117EFF3620025ADFB /* Block.cpp */,
+				421F977217EFF3620025ADFB /* Block.h */,
+				421F977417EFF3D60025ADFB /* Config.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1768,6 +1785,9 @@
 				1A9CE8991765A12C000E3062 /* CCComController.cpp in Sources */,
 				1A9CE89A1765A12C000E3062 /* CCInputDelegate.cpp in Sources */,
 				421F976A17EFDF820025ADFB /* GameScene.cpp in Sources */,
+				421F976D17EFF3110025ADFB /* Game.cpp in Sources */,
+				421F977017EFF3340025ADFB /* Field.cpp in Sources */,
+				421F977317EFF3620025ADFB /* Block.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
