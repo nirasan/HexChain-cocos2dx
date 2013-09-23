@@ -207,6 +207,11 @@
 		421F976D17EFF3110025ADFB /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F976B17EFF3110025ADFB /* Game.cpp */; };
 		421F977017EFF3340025ADFB /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F976E17EFF3340025ADFB /* Field.cpp */; };
 		421F977317EFF3620025ADFB /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F977117EFF3620025ADFB /* Block.cpp */; };
+		421F977C17EFFC050025ADFB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F977B17EFFC050025ADFB /* SenTestingKit.framework */; };
+		421F977D17EFFC050025ADFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		421F977E17EFFC050025ADFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		421F978417EFFC050025ADFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421F978217EFFC050025ADFB /* InfoPlist.strings */; };
+		421F978717EFFC050025ADFB /* HexChainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 421F978617EFFC050025ADFB /* HexChainTest.m */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -651,6 +656,13 @@
 		421F977117EFF3620025ADFB /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Block.cpp; path = ../Classes/Block.cpp; sourceTree = "<group>"; };
 		421F977217EFF3620025ADFB /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = ../Classes/Block.h; sourceTree = "<group>"; };
 		421F977417EFF3D60025ADFB /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Classes/Config.h; sourceTree = "<group>"; };
+		421F977A17EFFC050025ADFB /* HexChainTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexChainTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		421F977B17EFFC050025ADFB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		421F978117EFFC050025ADFB /* HexChainTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HexChainTest-Info.plist"; sourceTree = "<group>"; };
+		421F978317EFFC050025ADFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		421F978517EFFC050025ADFB /* HexChainTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexChainTest.h; sourceTree = "<group>"; };
+		421F978617EFFC050025ADFB /* HexChainTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexChainTest.m; sourceTree = "<group>"; };
+		421F978817EFFC050025ADFB /* HexChainTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexChainTest-Prefix.pch"; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -686,6 +698,16 @@
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
 				1AB8703C175E0A92005D39BF /* libwebsockets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421F977617EFFC050025ADFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421F977C17EFFC050025ADFB /* SenTestingKit.framework in Frameworks */,
+				421F977D17EFFC050025ADFB /* UIKit.framework in Frameworks */,
+				421F977E17EFFC050025ADFB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,6 +1227,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* HexChain.app */,
+				421F977A17EFFC050025ADFB /* HexChainTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1463,6 +1486,7 @@
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
 				15A3D9B31682F826002FB0C5 /* extensions */,
+				421F977F17EFFC050025ADFB /* HexChainTest */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				1AB87036175E0A92005D39BF /* libwebsockets */,
@@ -1486,8 +1510,29 @@
 				BF170DB012928DE900B8313A /* OpenGLES.framework */,
 				BF1C47EA1293683800B63C5D /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				421F977B17EFFC050025ADFB /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		421F977F17EFFC050025ADFB /* HexChainTest */ = {
+			isa = PBXGroup;
+			children = (
+				421F978517EFFC050025ADFB /* HexChainTest.h */,
+				421F978617EFFC050025ADFB /* HexChainTest.m */,
+				421F978017EFFC050025ADFB /* Supporting Files */,
+			);
+			path = HexChainTest;
+			sourceTree = "<group>";
+		};
+		421F978017EFFC050025ADFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				421F978117EFFC050025ADFB /* HexChainTest-Info.plist */,
+				421F978217EFFC050025ADFB /* InfoPlist.strings */,
+				421F978817EFFC050025ADFB /* HexChainTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
@@ -1529,6 +1574,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* HexChain.app */;
 			productType = "com.apple.product-type.application";
 		};
+		421F977917EFFC050025ADFB /* HexChainTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421F978917EFFC050025ADFB /* Build configuration list for PBXNativeTarget "HexChainTest" */;
+			buildPhases = (
+				421F977517EFFC050025ADFB /* Sources */,
+				421F977617EFFC050025ADFB /* Frameworks */,
+				421F977717EFFC050025ADFB /* Resources */,
+				421F977817EFFC050025ADFB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexChainTest;
+			productName = HexChainTest;
+			productReference = 421F977A17EFFC050025ADFB /* HexChainTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1546,6 +1609,7 @@
 				Japanese,
 				French,
 				German,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -1558,6 +1622,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* HexChain */,
+				421F977917EFFC050025ADFB /* HexChainTest */,
 			);
 		};
 /* End PBXProject section */
@@ -1595,7 +1660,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		421F977717EFFC050025ADFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421F978417EFFC050025ADFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		421F977817EFFC050025ADFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -1791,6 +1880,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		421F977517EFFC050025ADFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421F978717EFFC050025ADFB /* HexChainTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1800,6 +1897,17 @@
 			targetProxy = 15A3DA681682F881002FB0C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		421F978217EFFC050025ADFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				421F978317EFFC050025ADFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -1899,6 +2007,75 @@
 			};
 			name = Release;
 		};
+		421F978A17EFFC050025ADFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HexChain.app/HexChain";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HexChainTest/HexChainTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "HexChainTest/HexChainTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		421F978B17EFFC050025ADFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HexChain.app/HexChain";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HexChainTest/HexChainTest-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "HexChainTest/HexChainTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1937,6 +2114,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
+		};
+		421F978917EFFC050025ADFB /* Build configuration list for PBXNativeTarget "HexChainTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421F978A17EFFC050025ADFB /* Debug */,
+				421F978B17EFFC050025ADFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HexChain" */ = {
 			isa = XCConfigurationList;
