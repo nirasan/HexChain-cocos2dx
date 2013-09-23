@@ -212,6 +212,7 @@
 		421F977E17EFFC050025ADFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		421F978417EFFC050025ADFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421F978217EFFC050025ADFB /* InfoPlist.strings */; };
 		421F978717EFFC050025ADFB /* HexChainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 421F978617EFFC050025ADFB /* HexChainTest.m */; };
+		421F978E17F030510025ADFB /* GameTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 421F978D17F030510025ADFB /* GameTest.mm */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -663,6 +664,8 @@
 		421F978517EFFC050025ADFB /* HexChainTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexChainTest.h; sourceTree = "<group>"; };
 		421F978617EFFC050025ADFB /* HexChainTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexChainTest.m; sourceTree = "<group>"; };
 		421F978817EFFC050025ADFB /* HexChainTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexChainTest-Prefix.pch"; sourceTree = "<group>"; };
+		421F978C17F030510025ADFB /* GameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTest.h; sourceTree = "<group>"; };
+		421F978D17F030510025ADFB /* GameTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameTest.mm; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1521,6 +1524,8 @@
 				421F978517EFFC050025ADFB /* HexChainTest.h */,
 				421F978617EFFC050025ADFB /* HexChainTest.m */,
 				421F978017EFFC050025ADFB /* Supporting Files */,
+				421F978C17F030510025ADFB /* GameTest.h */,
+				421F978D17F030510025ADFB /* GameTest.mm */,
 			);
 			path = HexChainTest;
 			sourceTree = "<group>";
@@ -1885,6 +1890,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421F978717EFFC050025ADFB /* HexChainTest.m in Sources */,
+				421F978E17F030510025ADFB /* GameTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

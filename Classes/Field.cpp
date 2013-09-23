@@ -17,9 +17,9 @@ Field::~Field()
         for (int y = 0; y < FIELD_HEIGHT; y++) {
             delete blocks[x][y]; blocks[x][y] = NULL;
         }
-        delete blocks[x]; blocks[x] = NULL;
+        delete[] blocks[x]; blocks[x] = NULL;
     }
-    delete blocks; blocks = NULL;
+    delete[] blocks; blocks = NULL;
 }
 
 Block*** Field::getBlocks()

@@ -22,6 +22,7 @@ public:
         kColor_Green,
         kColor_Yellow,
         kColor_Purple,
+        kColor_Last,
     };
 };
 
