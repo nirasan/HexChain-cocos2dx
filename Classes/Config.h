@@ -7,6 +7,7 @@
 #define FIELD_WIDTH  10
 #define FIELD_HEIGHT 20
 
-#define DISTANCE_THRESHOLD sqrt(5.0)
+#define FIELD_WIDTH_INTERVAL  0.04
+#define FIELD_HEIGHT_INTERVAL 0.02
 
 #endif
