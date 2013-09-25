@@ -32,6 +32,38 @@ void GameScene::initGame()
     game = new Game();
     fillBlocks();
     updateScore();
+    
+    initTime();
+}
+
+void GameScene::initTime()
+{
+    time = INIT_TIME;
+    char str[] = "00";
+    sprintf(str, "%02d", time);
+    
+    CCSize size = CCDirector::sharedDirector()->getWinSize();
+    CCLabelTTF* t = CCLabelTTF::create(str, "Arial", 18.0);
+    t->setPosition(ccp(size.width * 0.1, size.height * 0.7));
+    t->setTag(TAG_TIME);
+    this->addChild(t);
+    
+    this->schedule(schedule_selector(GameScene::updateTime), 1.0);
+}
+
+void GameScene::updateTime()
+{
+    time -= 1;
+    
+    char str[] = "00";
+    sprintf(str, "%02d", time);
+    
+    CCLabelTTF* t = (CCLabelTTF*)this->getChildByTag(TAG_TIME);
+    t->setString(str);
+    
+    if (time <= 0) {
+        this->unschedule(schedule_selector(GameScene::updateTime));
+    }
 }
 
 void GameScene::updateScore()

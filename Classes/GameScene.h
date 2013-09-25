@@ -11,7 +11,13 @@ class GameScene : public cocos2d::CCLayer
 {
 private:
     Game* game;
+    
+    int time;
+    
     void initGame();
+    
+    void initTime();
+    void updateTime();
     
     void updateScore();
     

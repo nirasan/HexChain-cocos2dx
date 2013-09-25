@@ -13,6 +13,9 @@
 #define SCORE_PAR_BLOCK 10
 
 #define TAG_SCORE              100
+#define TAG_TIME               101
 #define TAG_FIRST_BLOCK_NUMBER 200
+
+#define INIT_TIME 60
 
 #endif
