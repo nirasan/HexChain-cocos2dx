@@ -4,7 +4,7 @@
 Game::Game()
 {
     field = new Field();
-    lastNumber = 0;
+    lastNumber = TAG_FIRST_BLOCK_NUMBER;
     
     filledBlocks = new bool*[FIELD_WIDTH];
     checkedBlocks = new bool*[FIELD_WIDTH];
@@ -21,6 +21,8 @@ Game::Game()
     lastChecked = new int[2];
     lastChecked[0] = 0;
     lastChecked[1] = 0;
+    
+    score = 0;
 }
 
 Game::~Game()
@@ -54,6 +56,11 @@ bool** Game::getFilledBlocks()
 bool** Game::getCheckedBlocks()
 {
     return checkedBlocks;
+}
+
+int Game::getScore()
+{
+    return score;
 }
 
 // 消せるブロックかどうかチェック
@@ -101,6 +108,8 @@ void Game::deleteCheckedBlocks()
             if (checkedBlocks[x][y]) {
                 delete field->getBlocks()[x][y];
                 field->getBlocks()[x][y] = NULL;
+                
+                score += SCORE_PAR_BLOCK;
             }
             checkedBlocks[x][y] = false;
         }

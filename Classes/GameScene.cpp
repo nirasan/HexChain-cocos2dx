@@ -29,8 +29,26 @@ bool GameScene::init()
 
 void GameScene::initGame()
 {
-    game = new Game();    
+    game = new Game();
     fillBlocks();
+    updateScore();
+}
+
+void GameScene::updateScore()
+{
+    char str[] = "0000000";
+    sprintf(str, "%07d", game->getScore());
+    
+    CCSize size = CCDirector::sharedDirector()->getWinSize();
+    CCLabelTTF* score = (CCLabelTTF*)this->getChildByTag(TAG_SCORE);
+    if (score == NULL) {
+        score = CCLabelTTF::create(str, "Arial", 18.0);
+        score->setPosition(ccp(size.width * 0.1, size.height * 0.8));
+        score->setTag(TAG_SCORE);
+        this->addChild(score);
+    } else {
+        score->setString(str);
+    }
 }
 
 bool GameScene::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
@@ -82,6 +100,8 @@ void GameScene::deleteBlocks()
     
     game->deleteCheckedBlocks();
     
+    updateScore();
+    
     game->dropBlocks();
     
     fillBlocks();
@@ -125,7 +145,7 @@ void GameScene::fillBlocks()
             Block* b = game->getField()->getBlocks()[x][y];
             if (b != NULL) {
                 CCLabelTTF* l = (CCLabelTTF*)this->getChildByTag(b->getNumber());
-                CCMoveTo* action = CCMoveTo::create(1.0,
+                CCMoveTo* action = CCMoveTo::create(0.3,
                                                     ccp(size.width  * (0.32 + x * FIELD_WIDTH_INTERVAL),
                                                         size.height * (0.1  + y * FIELD_HEIGHT_INTERVAL)));
                 l->runAction(action);

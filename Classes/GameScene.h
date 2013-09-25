@@ -13,6 +13,8 @@ private:
     Game* game;
     void initGame();
     
+    void updateScore();
+    
     void fillBlocks();    
     void deleteBlocks();
     

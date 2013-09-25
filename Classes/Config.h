@@ -10,4 +10,9 @@
 #define FIELD_WIDTH_INTERVAL  0.04
 #define FIELD_HEIGHT_INTERVAL 0.02
 
+#define SCORE_PAR_BLOCK 10
+
+#define TAG_SCORE              100
+#define TAG_FIRST_BLOCK_NUMBER 200
+
 #endif

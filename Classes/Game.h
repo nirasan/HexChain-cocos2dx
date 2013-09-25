@@ -19,6 +19,8 @@ private:
     bool isChecking;
     int* lastChecked;
     
+    int score;
+    
 public:
     Game();
     ~Game();
@@ -27,6 +29,7 @@ public:
     int getLastNumber();
     bool** getFilledBlocks();
     bool** getCheckedBlocks();
+    int getScore();
     
     bool checkBlocks(int x, int y);
     void deleteCheckedBlocks();
