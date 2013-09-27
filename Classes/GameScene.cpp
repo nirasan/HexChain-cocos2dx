@@ -63,6 +63,8 @@ void GameScene::updateTime()
     
     if (time <= 0) {
         this->unschedule(schedule_selector(GameScene::updateTime));
+        CCLayer* layer = BaseModalLayer::create();
+        this->addChild(layer);
     }
 }
 

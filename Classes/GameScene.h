@@ -4,6 +4,7 @@
 #include <iostream>
 #include "cocos2d.h"
 #include "Game.h"
+#include "BaseModalLayer.h"
 
 USING_NS_CC;
 

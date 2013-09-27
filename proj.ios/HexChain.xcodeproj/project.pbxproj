@@ -213,6 +213,10 @@
 		421F978417EFFC050025ADFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421F978217EFFC050025ADFB /* InfoPlist.strings */; };
 		421F978717EFFC050025ADFB /* HexChainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 421F978617EFFC050025ADFB /* HexChainTest.m */; };
 		421F978E17F030510025ADFB /* GameTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 421F978D17F030510025ADFB /* GameTest.mm */; };
+		421F979117F57E350025ADFB /* BaseModalLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 421F978F17F57E350025ADFB /* BaseModalLayer.cpp */; };
+		421F979517F5801F0025ADFB /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 421F979217F5801F0025ADFB /* frame.png */; };
+		421F979617F5801F0025ADFB /* tg_close_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 421F979317F5801F0025ADFB /* tg_close_1.png */; };
+		421F979717F5801F0025ADFB /* tg_close_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 421F979417F5801F0025ADFB /* tg_close_2.png */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -666,6 +670,11 @@
 		421F978817EFFC050025ADFB /* HexChainTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexChainTest-Prefix.pch"; sourceTree = "<group>"; };
 		421F978C17F030510025ADFB /* GameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTest.h; sourceTree = "<group>"; };
 		421F978D17F030510025ADFB /* GameTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameTest.mm; sourceTree = "<group>"; };
+		421F978F17F57E350025ADFB /* BaseModalLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseModalLayer.cpp; path = ../Classes/BaseModalLayer.cpp; sourceTree = "<group>"; };
+		421F979017F57E350025ADFB /* BaseModalLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModalLayer.h; path = ../Classes/BaseModalLayer.h; sourceTree = "<group>"; };
+		421F979217F5801F0025ADFB /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = "<group>"; };
+		421F979317F5801F0025ADFB /* tg_close_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tg_close_1.png; sourceTree = "<group>"; };
+		421F979417F5801F0025ADFB /* tg_close_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tg_close_2.png; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1221,6 +1230,8 @@
 				421F977117EFF3620025ADFB /* Block.cpp */,
 				421F977217EFF3620025ADFB /* Block.h */,
 				421F977417EFF3D60025ADFB /* Config.h */,
+				421F978F17F57E350025ADFB /* BaseModalLayer.cpp */,
+				421F979017F57E350025ADFB /* BaseModalLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1543,6 +1554,9 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				421F979217F5801F0025ADFB /* frame.png */,
+				421F979317F5801F0025ADFB /* tg_close_1.png */,
+				421F979417F5801F0025ADFB /* tg_close_2.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1662,6 +1676,9 @@
 				1A9CE8891765A12C000E3062 /* json_internalmap.inl in Resources */,
 				1A9CE88C1765A12C000E3062 /* json_valueiterator.inl in Resources */,
 				1A9CE88E1765A12C000E3062 /* sconscript in Resources */,
+				421F979517F5801F0025ADFB /* frame.png in Resources */,
+				421F979617F5801F0025ADFB /* tg_close_1.png in Resources */,
+				421F979717F5801F0025ADFB /* tg_close_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1882,6 +1899,7 @@
 				421F976D17EFF3110025ADFB /* Game.cpp in Sources */,
 				421F977017EFF3340025ADFB /* Field.cpp in Sources */,
 				421F977317EFF3620025ADFB /* Block.cpp in Sources */,
+				421F979117F57E350025ADFB /* BaseModalLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
